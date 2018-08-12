@@ -1,1 +1,37 @@
-test case
+ 
+
+
+ - Màn hình salemode.			
+ 		- Multibutton tại màn hình salemode.									- Không hiển thị multibutton honto.
+
+ - Màn hình goodsmdoe.	
+ 		- Multibutton tại màn hình goodsmode.									- Hiển thị multibutton honto.
+ 		- Layout multibuton honto.												- Hiển thị đúng vị trí và đồng nhất với các button theo đúng chỉ thị thiết kế.
+ 		- Trường hợp click multibutton honto.									- Hiển thị màn hình InputHontoReserveID.
+ 		- Trường hợp sản phẩm đã có hontoID.									- Hiển thị hình tròn bên trái tên sản phẩm theo đúng chỉ thị thiết kế.
+
+ -Màn hình InputHontoReserveID.
+ 		- Layout màn hình InputHontoReserveID.									- Layout hiển thị đúng vị trí, đồng nhất theo đúng chỉ thị thiết kế.
+ 		- Textfield khi mở màn hình.											- Tự động được focus khi màn hình được mở.
+ 		- Table thông tin sản phẩm.												- Hiển thị được thông tin sản phẩm đúng theo hàng, cột, loại thông tin.
+ 		- Thông tin sản phẩm được focus để hiển thị.							- Hiển thị thông tin sản phẩm cuối cùng trên màn hình goodsmode.
+ 		- Trường hợp nhấn tenky số [0-9] trên màn hình.							- Nhận giá trị tương ứng tại textfield.
+ 		- Trường hợp nhấn số trên màn phím máy tính.							- Nhận giá trị tương ứng tại textfield.
+ 		- Trường hợp nhấn button [C] trên màn hình.								- Giá trị trong textfield được xóa hết.
+ 		- Trường hợp nhấn button [BS] trên màn hình.							- Ký tự cuối cùng bên phải textfield bị xóa đi.
+ 		- Trường hợp nhấn phím [backspace] trên bàn phím máy tính.				- ký tự cuối cùng bên phải textfield bị xóa đi.
+ 		- Trường hợp nhấn button [close] trên màn hình.							- Đóng màn hình, kết thúc xử lý.
+ 		- Trường hợp textfield trống, nhấn button [reset] trên màn hình.		- Lưu HontoID sản phẩm tương ứng là empty, đóng màn hình, kết thúc xử lý.
+ 		- Trường hợp textfield có HontoID, nhấn nhấn button [reset] trên màn hình.	- Lưu HontoID sản phẩm tương ứng là empty, đóng màn hình, 
+ 																						tại màn hình goodsmode sản phẩm tương ứng vừa được chọn mất hình tròn bên trái sản phẩm, kết thúc xử lý.
+ 		- Trường hợp textfield trống, nhấn button [Hontoid] trên màn hình.		- Lưu HontoID sản phẩm tương ứng là empty, đóng màn hình, kết thúc xử lý.
+ 		- Trường hợp nhập giá trị là chữ, nhấn button [Hontoid] trên màn hình.	- Textfield không nhận giá trị là ký tự là chữ.
+ 		- Trường hợp nhập giá trị là ký tự đặc biệt, nhấn button [Hontoid] trên màn hình.	- Textfield không nhận giá trị là ký tự đặc biệt.
+ 		- Trường hợp nhập giá trị là ký tự số, nhấn button [Hontoid] trên màn hình.			- Textfield nhận giá trị là số.
+ 		- Trường hợp nhập số ít hơn 15 số, nhấn button [Hontoid] trên màn hình. - Hiển thị message: "".
+ 		- Trường hợp nhập quá 15 số, nhấn button [Hontoid] trên màn hình.		- Hiển thị message: "".
+ 		- Trường hợp nhập 15 số nhưng sai C/D, nhấn button [Hontoid] trên màn hình. - Hiển thị message: "".
+ 		- Trường hợp nhập 15 số đúng C/D, nhấn button [Hontoid] trên màn hình.		- Lưu HontoID cho sản phẩm tương ứng đang được chọn, đóng màn hình, tại màn 																				hình goodsmode sản phẩm vừa được chọn hiện hình tròn bên trái 																							tên sản phẩm, kết thúc xử lý.
+ 	- Màn hình paymentmode.														- Không hiển thị multibutton honto.
+
+ 	(khong ton tại csdl hontoid trong .json, sản phẩm khác loại nhập cùng hontoid, ......)
